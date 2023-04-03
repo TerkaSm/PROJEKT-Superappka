@@ -6,7 +6,7 @@ html { box-sizing: border-box; }
  BARVY
  sede pozadi      #e5e5e5
  svetle fialova   #48418e
- tmave fialova    #25133d
+ tmave fialova    #25133d  //  #3c3180
 
  POUZITE PISMO
  Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
@@ -31,3 +31,90 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+/* ***** MOBILE Version ***** */
+
+h1 {
+	color: white;
+	font-size: 40px;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+
+/* ------------- Menu ----- */
+
+.header {
+	font-size: 18px;
+}
+
+.logo {
+	padding: 10px 20px;
+	border: 1px solid #3c3180;
+	font-weight: 700;
+}
+
+.menu {
+	display: flex;
+}
+
+.item {
+	flex: 1 0 50%;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	padding: 10px 20px;
+	border: 1px solid #3c3180;
+	border-top: none;
+}
+
+#free {
+	display: none;
+}
+
+.item:hover {
+	color: white;
+	background-color: #3c3180;
+}
+
+/* ------------- Hero ----- */
+
+.hero {
+	background: #3c3180 url(images/pozadi.jpg) no-repeat top left/cover;
+	padding: 30px;
+	padding-bottom: 0;
+}
+
+.text p {
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+
+}
+
+
+.but {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 12px 0;
+	display: block;
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.purple {
+	margin-bottom: 10px;
+	font-weight: 400;
+	background-color: #4d3fa5;
+}
+
+.trans {
+	font-weight: 300;
+}
+
+.image img {
+	max-width: calc(100% + 30px) ;
+	padding-top: 40px;
+}

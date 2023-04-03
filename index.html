@@ -5,6 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Superappka (standardní varianta)</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,15 +17,35 @@
 	<div class="obal">
 
 		<!-- menu -->
-		<ul>
-			<li>SUPER APPKA</li>
-			<li><a href="#">Úžasný design</a></li>
-			<li><a href="#">Boží funkce</a></li>
-			<li><a href="#">Zdarma ke stažení</a></li>
-		</ul>
-
+		<header class="header">
+			<div class="logo">SUPER APPKA</div>
+			<div class="menu">
+				<a class="item" href="#">Úžasný design</a>
+				<a class="item" href="#">Boží funkce</a>
+				<a class="item" id="free" href="#">Zdarma ke stažení</a>
+			</div>
+		</header>
 
 		<!-- hero sekce / banner -->
+		<div class="hero">
+			<div class="box">
+				<div class="text">
+					<h1>Super Appka</h1>
+
+					<p>Úžasná mobilní aplikace,
+					<br> která Ti změní život.</p>
+				</div>
+				<div class="buttons">
+					<a class="but purple" href="#">Stáhnout zdarma</a>
+					<a class="but trans" href="#">Více informací</a>
+				</div>
+			</div>
+			<div class="image">
+				<img src="images/telefon.png" alt="Telefon">
+			</div>
+		</div>
+
+		<!--
 		<h1>Super Appka</h1>
 
 		<p>
@@ -32,7 +57,7 @@
 		<a href="#">Více informací</a>
 
 		<img src="images/telefon.png" alt="Telefon">
-
+		-->
 
 
 
