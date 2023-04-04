@@ -27,7 +27,7 @@ body {
 	max-width: 960px; /* obsah stránky je omezený do pruhu širokého max. 960px */
 	margin: 0 auto; /* pruh je na stránce vycentrovaný */
 	background: white;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.671);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
@@ -46,11 +46,14 @@ h1 {
 
 .header {
 	font-size: 18px;
+	color: white;
+	background-color: #3c3180/*rgba(8, 8, 8, 0.79)*/;
 }
 
 .logo {
-	padding: 10px 20px;
-	border: 1px solid #3c3180;
+	background-color: #362c74;
+	padding: 15px 20px;
+	border: 1px solid white;
 	font-weight: 700;
 }
 
@@ -61,10 +64,10 @@ h1 {
 .item {
 	flex: 1 0 50%;
 	text-decoration: none;
-	color: black;
+	color: white;
 	text-align: center;
-	padding: 10px 20px;
-	border: 1px solid #3c3180;
+	padding: 15px 20px;
+	border: 1px solid white;
 	border-top: none;
 }
 
@@ -102,6 +105,7 @@ h1 {
 	border: 1px solid white;
 	border-radius: 5px;
 	text-align: center;
+	max-width: 500px;
 }
 
 .purple {
@@ -114,7 +118,15 @@ h1 {
 	font-weight: 300;
 }
 
-.image img {
-	max-width: calc(100% + 30px) ;
-	padding-top: 40px;
+.image {
+	min-height: 440px;
+}
+
+.image img { 
+	/*max-width: calc(100% + 30px) ;
+	padding-top: 40px;*/
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: -44px;
 }
