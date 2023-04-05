@@ -86,6 +86,8 @@ h1 {
 	background: #3c3180 url(images/pozadi.jpg) no-repeat top left/cover;
 	padding: 30px;
 	padding-bottom: 0;
+	min-height: 700px;
+	position: relative;
 }
 
 .text p {
@@ -119,14 +121,16 @@ h1 {
 }
 
 .image {
-	min-height: 440px;
+	/*min-height: 440px;/*/
+	max-height: 100%;
 }
 
 .image img { 
-	/*max-width: calc(100% + 30px) ;
-	padding-top: 40px;*/
 	display: block;
 	position: absolute;
 	right: 0;
-	bottom: -44px;
+	bottom: 0;
+	max-height: 45%;
+	max-width: 90%;
+	margin-top: 20px;
 }
