@@ -47,12 +47,13 @@ h1 {
 .header {
 	font-size: 18px;
 	color: white;
-	background-color: #3c3180;
+	background-color: #362c74 /*#3c3180*/;
 }
 
 .logo {
-	background-color: #362c74;
-	padding: 15px 20px;
+	background-color: #302867 /*#362c74*/;
+	padding: 18px 30px 17px 30px;
+	font-size: 20px;
 	border: 1px solid white;
 	font-weight: 700;
 }
@@ -85,7 +86,6 @@ h1 {
 .hero {
 	background: #3c3180 url(images/pozadi.jpg) no-repeat top left/cover;
 	padding: 30px;
-	padding-bottom: 0;
 	min-height: 600px;
 	position: relative;
 }
@@ -114,7 +114,7 @@ h1 {
 .purple {
 	margin-bottom: 10px;
 	font-weight: 400;
-	background-color: #4B2561;
+	background-color: #391D56 /*#4B2561*/;
 }
 
 .purple:hover {
@@ -178,4 +178,111 @@ footer p {
 	text-align: center;
 	margin: 0;
 	padding: 10px;
+}
+
+
+
+
+/* ***** TABLET Version ***** */
+
+/* ------------- Menu ----- */
+
+@media screen and (min-width: 560px) {
+	.header {
+		color: black;
+		background-color: white;
+		display: flex;
+	}
+
+	.menu {
+		display: flex;
+		flex: 1 1 100%;
+	}
+
+	.logo {
+		flex: 0 0 200px;
+		background-color: white;
+		border: none;
+	}
+
+	.item {
+		flex: 0 0 180px;
+		color: black;
+		border: none;
+		font-size: 20px;
+		font-weight: 400;
+		padding: 18px 30px 17px;
+	}
+
+	/* ----------- Hero sekce / banner ----- */
+
+	.hero {
+		display: flex;
+		min-height: 450px;
+		padding: 0;
+	}
+
+	.banner {
+		flex: 1 1 65%;
+		min-height: 450px;
+		padding: 30px;
+	}
+
+	/*.text h1 {
+		font-size: 60px;
+	}
+
+	.text p {
+		font-size: 28px;
+		margin-bottom: 60px;
+	}*/
+
+	.buttons {
+		max-width: 250px;
+	}
+
+	
+
+	.image {
+		flex: 1 1 45%;
+	}
+
+	.image img {
+		max-height: 58%;
+	}
+
+
+	/* ----------- Obsah se 3 sloupci ----- */
+
+	.box {
+		max-width: 600px;
+		margin: 50px auto;
+	}
+
+}
+
+
+
+@media screen and (min-width: 760px) {
+	#free {
+		display: block;
+		flex: 0 0 212px
+	}
+
+	.image img {
+		max-height: 80%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.buttons {
+		display: flex;
+		gap: 20px;
+		width: 100%;
+	}
+
+	.but {
+		flex: 1 1 40%;
+		max-width: 100%;
+	}
 }
